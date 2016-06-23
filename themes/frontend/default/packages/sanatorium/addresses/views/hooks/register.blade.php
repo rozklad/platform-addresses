@@ -5,7 +5,7 @@
 		<div class="panel-heading" role="tab" id="fakturacni-header">
 			<h4 class="panel-title">
 				<a class="btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#fakturacni-udaje" aria-expanded="true" aria-controls="fakturacni-udaje">
-					{{ trans('sanatorium/shoporders::cart.billing.title') }}
+					{{ trans('sanatorium/orders::cart.billing.title') }}
 				</a>
 			</h4>
 		</div>
@@ -16,7 +16,7 @@
 
 				<div class="form-group">
 					<div class="col-sm-4">
-						<label for="name" class="control-label">{{ trans('sanatorium/shoporders::cart.billing.name') }}</label>
+						<label for="name" class="control-label">{{ trans('sanatorium/orders::cart.billing.name') }}</label>
 					</div>
 					<div class="col-sm-8">
 						<input type="text" class="form-control" name="address[fakturacni][name]" id="name">
@@ -24,7 +24,7 @@
 				</div>
 				<div class="form-group">
 					<div class="col-sm-4">
-						<label for="street" class="control-label">{{ trans('sanatorium/shoporders::cart.billing.street') }}</label>
+						<label for="street" class="control-label">{{ trans('sanatorium/orders::cart.billing.street') }}</label>
 					</div>
 					<div class="col-sm-8">
 						<input type="text" class="form-control" name="address[fakturacni][street]" id="street">
@@ -32,7 +32,7 @@
 				</div>
 				<div class="form-group">
 					<div class="col-sm-4">
-						<label for="city" class="control-label">{{ trans('sanatorium/shoporders::cart.billing.city') }}</label>
+						<label for="city" class="control-label">{{ trans('sanatorium/orders::cart.billing.city') }}</label>
 					</div>
 					<div class="col-sm-8">
 						<input type="text" class="form-control" name="address[fakturacni][city]" id="city">
@@ -40,7 +40,7 @@
 				</div>
 				<div class="form-group">
 					<div class="col-sm-4">
-						<label for="postcode" class="control-label">{{ trans('sanatorium/shoporders::cart.billing.zip') }}</label>
+						<label for="postcode" class="control-label">{{ trans('sanatorium/orders::cart.billing.zip') }}</label>
 					</div>
 					<div class="col-sm-8">
 						<input type="text" class="form-control" name="address[fakturacni][postcode]" id="postcode">
@@ -48,7 +48,7 @@
 				</div>
 				<div class="form-group">
 					<div class="col-sm-4">
-						<label for="country" class="control-label">{{ trans('sanatorium/shoporders::cart.billing.country') }}</label>
+						<label for="country" class="control-label">{{ trans('sanatorium/orders::cart.billing.country') }}</label>
 					</div>
 					<div class="col-sm-8">
 						@if ( isset($deliveryCountries) )
@@ -113,7 +113,7 @@
 		<div class="panel-heading" role="tab" id="dodaci-header">
 			<h4 class="panel-title">
 				<a class="btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#dodaci-udaje" aria-expanded="true" aria-controls="dodaci-udaje">
-					{{ trans('sanatorium/shoporders::cart.delivery.title') }}
+					{{ trans('sanatorium/orders::cart.delivery.title') }}
 				</a>
 			</h4>
 		</div>
@@ -124,7 +124,7 @@
 
 				<div class="form-group">
 					<div class="col-sm-4">
-						<label for="dodaci-name" class="control-label">{{ trans('sanatorium/shoporders::cart.delivery.name') }}</label>
+						<label for="dodaci-name" class="control-label">{{ trans('sanatorium/orders::cart.delivery.name') }}</label>
 					</div>
 					<div class="col-sm-8">
 						<input type="text" class="form-control" name="address[dodaci][name]" id="dodaci-name">
@@ -132,7 +132,7 @@
 				</div>
 				<div class="form-group">
 					<div class="col-sm-4">
-						<label for="dodaci-street" class="control-label">{{ trans('sanatorium/shoporders::cart.delivery.street') }}</label>
+						<label for="dodaci-street" class="control-label">{{ trans('sanatorium/orders::cart.delivery.street') }}</label>
 					</div>
 					<div class="col-sm-8">
 						<input type="text" class="form-control" name="address[dodaci][street]" id="dodaci-street">
@@ -140,7 +140,7 @@
 				</div>
 				<div class="form-group">
 					<div class="col-sm-4">
-						<label for="dodaci-city" class="control-label">{{ trans('sanatorium/shoporders::cart.delivery.city') }}</label>
+						<label for="dodaci-city" class="control-label">{{ trans('sanatorium/orders::cart.delivery.city') }}</label>
 					</div>
 					<div class="col-sm-8">
 						<input type="text" class="form-control" name="address[dodaci][city]" id="dodaci-city">
@@ -148,7 +148,7 @@
 				</div>
 				<div class="form-group">
 					<div class="col-sm-4">
-						<label for="dodaci-postcode" class="control-label">{{ trans('sanatorium/shoporders::cart.delivery.zip') }}</label>
+						<label for="dodaci-postcode" class="control-label">{{ trans('sanatorium/orders::cart.delivery.zip') }}</label>
 					</div>
 					<div class="col-sm-8">
 						<input type="text" class="form-control" name="address[dodaci][postcode]" id="dodaci-postcode">
@@ -156,7 +156,7 @@
 				</div>
 				<div class="form-group">
 					<div class="col-sm-4">
-						<label for="dodaci-country" class="control-label">{{ trans('sanatorium/shoporders::cart.delivery.country') }}</label>
+						<label for="dodaci-country" class="control-label">{{ trans('sanatorium/orders::cart.delivery.country') }}</label>
 					</div>
 					<div class="col-sm-8">
 						@if ( isset($deliveryCountries) )
@@ -220,7 +220,7 @@
 		<div class="panel-heading" role="tab" id="firemni-header">
 			<h4 class="panel-title">
 				<a class="btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#firemni-udaje" aria-expanded="true" aria-controls="firemni-udaje">
-					{{ trans('sanatorium/shoporders::cart.company.title') }}
+					{{ trans('sanatorium/orders::cart.company.title') }}
 				</a>
 			</h4>
 		</div>
@@ -228,7 +228,7 @@
 			<div class="panel-body">
 				<div class="form-group">
 					<div class="col-sm-4">
-						<label for="ic" class="control-label">{{ trans('sanatorium/shoporders::cart.company.ic') }}</label>
+						<label for="ic" class="control-label">{{ trans('sanatorium/orders::cart.company.ic') }}</label>
 					</div>
 					<div class="col-sm-8">
 						<input type="text" class="form-control" name="address[fakturacni][ic]" id="ic">
@@ -236,7 +236,7 @@
 				</div>
 				<div class="form-group">
 					<div class="col-sm-4">
-						<label for="dic" class="control-label">{{ trans('sanatorium/shoporders::cart.company.dic') }}</label>
+						<label for="dic" class="control-label">{{ trans('sanatorium/orders::cart.company.dic') }}</label>
 					</div>
 					<div class="col-sm-8">
 						<input type="text" class="form-control" name="address[fakturacni][dic]" id="dic">
